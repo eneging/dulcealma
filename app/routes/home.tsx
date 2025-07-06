@@ -4,8 +4,8 @@ import { Welcome } from "./welcome";
 
 export function meta({}: Route.MetaArgs) {
   return [
-    { title: "Puerto Rico Restobar" },
-    { name: "description", content: "Bienvenido a Puerto Rico restobar!" },
+    { title: "Dulce Alma" },
+    { name: "description", content: "Bienvenido a Dulce Alma!" },
     
   ];
 }
