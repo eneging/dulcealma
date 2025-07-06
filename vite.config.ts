@@ -25,7 +25,7 @@ export default defineConfig({
         icons: [
           {
             src: '/icono.png', // Asegúrate que estas imágenes estén en tu carpeta `public`
-            sizes: '192x192',
+            sizes: '192x193',
             type: 'image/png'
           },
           {
