@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { FaWhatsapp, FaInstagram, FaFacebookF } from 'react-icons/fa';
 import { Plus, X } from 'lucide-react'; // Using lucide-react for Plus/X icons
+import InstallPWAButton from './descargarWeb';
 
 const SocialFloatingButtons: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -30,6 +31,11 @@ const SocialFloatingButtons: React.FC = () => {
           >
             <FaWhatsapp size={24} />
             <span className={labelClasses}>WhatsApp</span>
+          </a>
+
+          <a>
+            <InstallPWAButton></InstallPWAButton>
+            
           </a>
 
           {/* Instagram Button */}

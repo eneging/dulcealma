@@ -25,3 +25,10 @@ export interface CartItem {
   product: Product;
   quantity: number;
 }
+declare interface BeforeInstallPromptEvent extends Event {
+  prompt: () => Promise<void>;
+  userChoice: Promise<{
+    outcome: "accepted" | "dismissed";
+    platform: string;
+  }>;
+}
