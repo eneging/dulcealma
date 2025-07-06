@@ -11,10 +11,7 @@ export default [
 route("/thanks","./src/pages/ThankYouPage.tsx"),
 route("ubicacion","./src/pages/Ubicacion.tsx"),
 
-route("food","./src/pages/food.tsx"),
-route("bar","./src/pages/Bar.tsx"),
 route("reservaciones","./src/pages/Reservaciones.tsx"),
-route("homeprueba","./src/pages/principalpages/HomePrincipal.tsx"),
 route('menu', "./routes/menu/Menu.tsx"),
 route('eventos', "./routes/eventos/Eventos.tsx"),
 route("inbox","./routes/LibrodeReclamaciones/Inbox.tsx"),
