@@ -102,7 +102,7 @@ const Eventos: React.FC = () => {
           ¿Quieres celebrar con nosotros?
         </h3>
         <p className="text-lg text-blue-600 mb-6">
-          Escríbenos para reservar un evento, planificar una sorpresa o resolver cualquier duda.
+          Escríbenos para reservar un evento
         </p>
         <a
           href={whatsappLink}
