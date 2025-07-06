@@ -7,8 +7,8 @@ function PrincipalNav() {
   const links = [
     { href: "/", label: "INICIO", icon: "home" },
     { href: "/store", label: "TIENDA", icon: "shopping-bag" },
-    { href: "/checkout", label: "CHECKOUT", icon: "credit-card" },
-    { href: "/ubicacion", label: "UBICANOS", icon: "map-pin" },
+    { href: "/checkout", label: "COMPRAR", icon: "credit-card" }, // Cambiado a "COMPRAR"
+    { href: "/ubicacion", label: "UBÍCANOS", icon: "map-pin" }, // Acento en "UBÍCANOS"
     { href: "/contacto", label: "CONTACTO", icon: "message-circle" },
   ];
 
@@ -31,7 +31,8 @@ function PrincipalNav() {
   };
 
   return (
-    <nav className="fixed lg:hidden bottom-0 w-full bg-white border-t shadow-xl py-2 z-50 lg:w-[30vw] lg:left-1/2 lg:-translate-x-1/2 rounded-t-2xl">
+    // La barra de navegación ahora tiene un fondo suave, bordes redondeados y una sombra delicada
+    <nav className="fixed lg:hidden bottom-0 w-full bg-pink-50 border-t border-rose-200 shadow-lg py-3 z-50 rounded-t-3xl">
       <div className="flex justify-around items-center">
         {links.map((link) => {
           const isActive = pathname === link.href;
@@ -39,12 +40,20 @@ function PrincipalNav() {
             <a
               key={link.href}
               href={link.href}
-              className={`flex flex-col items-center gap-1 transition-all ${
-                isActive ? "text-rose-500" : "text-sky-400"
-              } hover:text-rose-400`}
+              className={`flex flex-col items-center gap-1 font-sans font-medium transition-all duration-300 transform ${
+                isActive
+                  ? "text-pink-600 scale-105" // Color rosa vibrante y un ligero aumento de tamaño para activo
+                  : "text-gray-600 hover:text-pink-400" // Gris suave para inactivo, rosa pastel al pasar el mouse
+              } text-center`} // Asegura que el texto se centre si hay más de una línea
             >
-              {iconMap[link.icon]}
-              <span className="text-[11px]">{link.label}</span>
+              {/* Icono */}
+              <span className={`transition-colors duration-300 ${isActive ? "text-pink-600" : "text-gray-500 group-hover:text-pink-400"}`}>
+                {iconMap[link.icon]}
+              </span>
+              {/* Etiqueta */}
+              <span className="text-xs sm:text-sm whitespace-nowrap">
+                {link.label}
+              </span>
             </a>
           );
         })}

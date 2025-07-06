@@ -88,11 +88,11 @@ function Header() {
 
             {/* Main Header */}
             <div className='flex justify-center sticky top-0 z-50 w-full'>
-                <header className="w-full h-[10vh] min-h-[60px] lg:h-[8vh] lg:min-h-[80px] bg-rose-500 text-white flex items-center px-4 lg:px-10 py-3 shadow-lg justify-between font-serif"> {/* Font family added here */}
+                <header className="w-full h-[10vh] min-h-[60px] lg:h-[8vh]  lg:min-h-[80px] bg-rose-500 text-white flex items-center px-4 lg:px-10 py-3 shadow-lg justify-between font-serif"> {/* Font family added here */}
                     <a href="/" className="flex items-center gap-2">
                         {/* El logo se ajusta para que el texto sea el foco en pantallas grandes */}
-                        <img src={Logo} alt="Logo Dulce Alma" className="h-10 w-auto lg:h-12 hidden " /> 
-                        <span className="hidden md:inline text-3xl lg:text-4xl font-bold tracking-tight text-white drop-shadow-md">Dulce Alma</span> {/* Título de la marca */}
+                        <img src={Logo} alt="Logo Dulce Alma" className="h-13 w-auto lg:h-15  " /> 
+                      
                     </a>
 
                     {/* Navegación de escritorio */}
@@ -109,12 +109,14 @@ function Header() {
                         ))}
                     </nav>
 
+                    <div className=' flex justify-end'>
+
                     {/* Botones de acción (Reservar, Carrito) */}
-                    <div className="flex items-center gap-4 relative px-1 lg:px-5">
+                    <div className="flex items-center    relative px-1 lg:px-5">
                         <Button
                             onClick={() => setShowReserveModal(true)}
                             variant="outline"
-                            className="bg-white text-rose-600 border-rose-300 hover:bg-rose-50 hover:text-rose-700 transition-colors py-2 px-4 rounded-full shadow-sm"
+                            className="bg-white  text-rose-600 border-rose-300 hover:bg-rose-50 hover:text-rose-700 transition-colors py-2 rounded-br-none rounded-e-none   shadow-sm"
                         >
                             <CalendarCheck className="w-5 h-5 mr-2" />
                             <span className="hidden sm:inline font-semibold">Reservar</span>
@@ -123,7 +125,7 @@ function Header() {
                         <div className="relative">
                             <Button
                                 onClick={openDrawer}
-                                className="bg-rose-700 text-white hover:bg-rose-800 px-4 py-2 flex items-center gap-2 rounded-full transition-all relative group shadow-md"
+                                className="bg-rose-700 text-white hover:bg-rose-800 px-4 py-2 flex items-center gap-2 rounded-bl-none rounded-l-none transition-all relative group shadow-md"
                             >
                                 <ShoppingCart className="w-5 h-5" />
                                 {totalQuantity > 0 && (
@@ -144,6 +146,8 @@ function Header() {
                         >
                             {isMobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
                         </Button>
+                    </div>
+
                     </div>
                 </header>
 

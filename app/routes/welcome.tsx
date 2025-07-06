@@ -142,7 +142,7 @@ export const Welcome: React.FC<WelcomeProps> = () => {
                             variants={textVariants}
                             className="text-lg lg:text-xl text-gray-700 leading-relaxed font-light"
                         >
-                            Explora nuestros **postres artesanales**, bebidas encantadoras y momentos para compartir. ¡Tu rincón dulce favorito en Ica te espera!
+                            Explora nuestros <strong>postres artesanales</strong>, bebidas encantadoras y momentos para compartir. ¡Tu rincón dulce favorito en Ica te espera!
                         </motion.p>
                         <motion.div variants={buttonVariants} className="mt-8 flex flex-col sm:flex-row gap-5">
                             <motion.a
@@ -200,7 +200,7 @@ export const Welcome: React.FC<WelcomeProps> = () => {
                         Momentos dulces<br /><span className="text-blue-700">con sabor y alma</span>
                     </motion.h2>
                     <motion.p variants={textVariants} className="text-gray-700 text-lg leading-relaxed mb-6 font-light">
-                        En **Dulce Alma** celebramos cada instante con postres hechos con cariño, perfectos para compartir con amigos o disfrutar en soledad. Cada bocado es una experiencia inolvidable.
+                        En <strong>Dulce Alma</strong> celebramos cada instante con postres hechos con cariño, perfectos para compartir con amigos o disfrutar en soledad. Cada bocado es una experiencia inolvidable.
                     </motion.p>
                     <motion.p variants={textVariants} className="text-gray-500 text-xl italic font-serif">
                         “Donde cada bocado es una caricia para el alma.”
