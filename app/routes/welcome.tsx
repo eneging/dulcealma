@@ -1,21 +1,19 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 
-// Asumiendo que estas rutas son correctas y se han actualizado
-import PrincipalVista from "~/src/componets/principalVista"; 
-import Alistas from "../src/assets/icons/alistasicon.png"; // Icono de piqueos
-import Bebida from "../src/assets/icons/bebidaicon.png"; // Icono de bebidas
+
+ // Icono de bebidas
 import ReservaModal from '../src/componets/reservar/ReservaModal';
 
 // Asegúrate de que las rutas de tus imágenes son correctas
 import LocalPrincipal from "../../public/assets/images/mockups/local.png"; // Imagen de fondo principal
-import ChicaPlatos from "../../public/assets/images/mockups/chica1.webp"; // Una imagen que quizás uses como icono o para una sección
-import ChicaPastelHero from "../../public/assets/images/mockups/chicapastel3.png"; // Imagen para el hero
-import ChicaPastelFilosofia from "../../public/assets/images/mockups/chicapastel4.png"; // Imagen para la sección Filosofía
+ // Una imagen que quizás uses como icono o para una sección
+import ChicaPastelHero from "../../public/assets/imgdulcealma/chicatortachocolate.png"; // Imagen para el hero
+import ChicaPastelFilosofia from "../../public/assets/imgdulcealma/chicatortadegalleta.png"; // Imagen para la sección Filosofía
 
 
-import Ofertas from './store/ofertas'; // Renombrado a OfferProducts si es el mismo componente
-import Categorias from './store/categorias';
+// Renombrado a OfferProducts si es el mismo componente
+
 // import OfferProducts from './store/ofertas'; // Duplicado, usar solo uno
 import WhatsAppButton from '~/src/componets/SocialMedia';
 import AboutUs from './about/about';
@@ -40,13 +38,7 @@ interface FeaturedProduct {
 }
 
 export const Welcome: React.FC<WelcomeProps> = () => {
-    const categorias: CategoryItem[] = [
-        { src: Bebida, label: "Licores", alt: "Icono de Licores" },
-        { src: Alistas, label: "Piqueos", alt: "Icono de Piqueos/Alitas" },
-        { src: ChicaPlatos, label: "Platos", alt: "Icono de Platos Principales" }, // Usando una de tus imágenes como icono si aplica
-        { src: '/path/to/wine-icon.png', label: 'Vinos', alt: 'Icono de Vinos' },
-        { src: '/path/to/beer-icon.png', label: 'Cervezas', alt: 'Icono de Cervezas' },
-    ];
+ 
 
     const [showReserveModal, setShowReserveModal] = useState(false);
 
@@ -208,8 +200,6 @@ export const Welcome: React.FC<WelcomeProps> = () => {
                 </div>
             </motion.section>
 
-            {/* Componente de Categorías (se asume que ya tiene los estilos base) */}
-            <Categorias />
 
             {/* Componente AboutUs (se asume que ya tiene los estilos base) */}
             <AboutUs />

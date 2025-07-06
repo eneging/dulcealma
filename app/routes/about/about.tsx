@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import Chicapostre from "../../../public/assets/images/mockups/chicapastel1.png"; // Asegúrate de la ruta correcta
-import Chicapostre2 from "../../../public/assets/images/mockups/chicapasel2.png"; // Asegúrate de la ruta correcta
+import Chicapostre from "../../../public/assets/imgdulcealma/chicahelado.png"; // Asegúrate de la ruta correcta
+import Chicapostre2 from "../../../public/assets/imgdulcealma/chicapastelfresas.png"
 
 function AboutUs() {
     const containerVariants = {

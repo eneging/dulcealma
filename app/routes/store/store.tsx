@@ -2,7 +2,7 @@ import React, { useMemo, useCallback, useState, useEffect } from 'react';
 import { useStoreData } from '../../src/hooks/useStoreData';
 import { useCart } from '../../src/context/CartContext';
 import OfferProducts from './ofertas';
-import Carrusel from '~/src/componets/carrusel';
+
 
 // Slugify para nombres de archivos
 const slugify = (text: string) =>
@@ -22,7 +22,7 @@ const imageModules = import.meta.glob('../../src/assets/*/*.png', { eager: true 
 // Obtener la ruta de imagen con fallback
 const getImagePath = (categoryId: number, name: string) => {
   const slug = slugify(name);
-  const path = `../../src/assets/${categoryId}/${slug}.png`;
+  const path = `/public/assets/${categoryId}/${slug}.png`;
   const mod = imageModules[path] as { default: string } | undefined;
   return mod?.default || '/fallback.png'; // fallback en public/
 };

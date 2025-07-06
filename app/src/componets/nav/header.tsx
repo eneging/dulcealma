@@ -46,7 +46,8 @@ function Header() {
         { name: 'Eventos', href: '/eventos' },
         { name: 'Checkout', href: '/checkout' },
         { name: 'Ubícanos', href: '/ubicacion' },
-        { name: 'Nosotros', href: '/about' }, // Cambiado "About us" por "Nosotros" para coherencia
+        { name: 'Nosotros', href: '/about' },
+          { name: 'Info', href: '/InfoEmpresa' }, // Cambiado "About us" por "Nosotros" para coherencia
     ];
 
     const dismissDisclaimer = () => {
