@@ -1,0 +1,89 @@
+@import "tailwindcss";
+
+/* Importa la fuente "Playfair Display" de Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+/* También puedes considerar "Lora" o "Merriweather" como alternativas elegantes */
+
+
+@theme {
+  /* Define la fuente serif principal para el tema */
+  --font-serif: "Playfair Display", ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+  /* Define una fuente sans-serif más moderna y legible para el cuerpo del texto */
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+html,
+body {
+  /* Aplica un fondo muy suave, casi blanco, con un toque rosado */
+  @apply bg-rose-50 m-0; 
+  /* Usa la fuente sans-serif por defecto para el cuerpo */
+  font-family: var(--font-sans); 
+  /* Establece un color de texto base más suave para mejor contraste con fondos claros */
+  @apply text-gray-800; 
+
+  @media (prefers-color-scheme: dark) {
+    color-scheme: dark;
+    /* Considera cambiar el fondo y texto para el modo oscuro si lo necesitas */
+    /* @apply bg-gray-900 text-gray-100; */
+  }
+}
+
+/* Clases utilitarias de animación para usar con Tailwind */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes bounceOnce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.5s ease-out forwards;
+}
+
+.animate-bounce-once {
+  animation: bounceOnce 0.6s ease-out 1; /* Corre la animación solo una vez */
+}
+
+
+/* Estilos del Spinner */
+.spinner {
+  border: 4px solid rgba(255, 204, 204, 0.5); /* Un rosa más suave para el borde */
+  border-left-color: #ec4899; /* pink-600: Un rosa vibrante pero elegante para el movimiento */
+  border-radius: 50%;
+  width: 50px; /* Tamaño ligeramente más grande */
+  height: 50px; /* Tamaño ligeramente más grande */
+  animation: spin 1s linear infinite;
+  margin: 30px auto; /* Más margen para centrarlo y darle espacio */
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Estilos para el scrollbar (personalizado y sutil) */
+::-webkit-scrollbar {
+  width: 8px; /* Ancho del scrollbar */
+}
+
+::-webkit-scrollbar-track {
+  background: #fdf2f8; /* Un color de fondo muy claro, similar al bg-rose-50 */
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #fbcfe8; /* pink-200: Un rosa suave para la barra de desplazamiento */
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #f472b6; /* pink-400: Un rosa un poco más oscuro al pasar el mouse */
+}

@@ -1,0 +1,210 @@
+import type { Product } from "../types";
+import CervezaArtesanal from "../assets/bar/534513-01-9121.webp"
+import Hamburguesadoble from "../assets/food/pCP6rpZENBAwkXPMC-2400-x.webp"
+import AlitasBbq from "../assets/food/o38DE2ceoRDN9Yves-300-x.webp"
+import Mojito from "../assets/bar/mojito-7867iXed.webp"
+import Piscosour from "../assets/bar/20241212190809-20241107203130-shutterstock_1958418433-20-1_a8fcd2c9-c7c0-428e-ade0-d3d916d0c868.webp"
+import LimonadaFrozen from "../assets/bar/AdobeStock_190152413-scaled.webp"
+import CefeHelado from "../assets/bar/secretos-cafe-helado-bogotano-perfecto-1024x512.webp"
+import Cervezapilsen from "../assets/bar/2823.webp"
+import LocalPrincipal from "../assets/images/mockups/localeventos.jpeg";
+import JugoMaracuya from "../assets/bar/jugo-de-maracuya_web.jpg.webp"
+
+export const mockProducts: Product[] = [
+  {
+    id: 1,
+    name: "Cerveza Artesanal",
+    description: "Botella de 500ml, varias variedades.",
+    price: 4.5,
+    image: `${CervezaArtesanal}`,
+    category: "bebida",
+    available: true,
+  },
+  {
+    id: 2,
+    name: "Hamburguesa Doble",
+    description: "Con papas fritas incluidas.",
+    price: 8.99,
+    image: `${Hamburguesadoble}`,
+    category: "comida",
+    available: true,
+  },
+  {
+    id: 3,
+    name: "Reserva de Espacio Corporativo",
+    description: "Alquiler del salón principal por 4 horas.",
+    price: 150,
+    image: `${LocalPrincipal}`,
+    category: "evento",
+    available: true,
+  },
+
+    {
+    id: 4,
+    name: "Reserva de Espacio Corporativo",
+    description: "Alquiler del salón principal por 4 horas.",
+    price: 150,
+    image: `${LocalPrincipal}`,
+    category: "evento",
+    available: true,
+  },
+    {
+    id: 5,
+    name: "Reserva de Espacio Corporativo",
+    description: "Alquiler del salón principal por 4 horas.",
+    price: 150,
+    image: `${LocalPrincipal}`,
+    category: "evento",
+    available: true,
+  },
+{
+  id: 6,
+  name: "Mojito Clásico",
+  description: "Refrescante combinación de ron, hierbabuena, limón y soda.",
+  price: 6.5,
+  image: `${Mojito}`,
+  category: "bebida",
+  available: true,
+},
+{
+  id: 7,
+  name: "Pisco Sour Peruano",
+  description: "El clásico cóctel nacional con pisco, limón y un toque de amargo.",
+  price: 7.0,
+  image: `${Piscosour}`,
+  category: "bebida",
+  available: true,
+},
+{
+  id: 8,
+  name: "Limonada Frozen",
+  description: "Limonada granizada natural con hierbabuena. Ideal para el calor.",
+  price: 4.0,
+  image: `${LimonadaFrozen}`,
+  category: "bebida",
+  available: true,
+},
+{
+  id: 9,
+  name: "Café Helado de la Casa",
+  description: "Café orgánico con leche y hielo, endulzado naturalmente.",
+  price: 5.0,
+  image: `${CefeHelado}`,
+  category: "bebida",
+  available: true,
+},
+{
+  id: 10,
+  name: "Jugo de Maracuyá",
+  description: "100% natural, sin azúcar añadida. Pura fruta refrescante.",
+  price: 3.5,
+  image: `${JugoMaracuya}`,
+  category: "bebida",
+  available: true,
+},
+{
+  id: 11,
+  name: "Piña Colada Sin Alcohol",
+  description: "Cóctel tropical con piña, coco y hielo. Refrescante y suave.",
+  price: 5.5,
+  image:  `${Cervezapilsen}`,
+  category: "bebida",
+  available: true,
+},
+{
+  id: 12,
+  name: "Cerveza Artesanal IPA",
+  description: "Cerveza fuerte con notas cítricas y amargor intenso. 500ml.",
+  price: 5.8,
+  image: `${Cervezapilsen}`,
+  category: "bebida",
+  available: true,
+},
+{
+  id: 13,
+  name: "Tequila Sunrise",
+  description: "Vibrante cóctel con tequila, jugo de naranja y granadina.",
+  price: 6.8,
+  image:  `${Cervezapilsen}`,
+  category: "bebida",
+  available: true,
+},
+{
+  id: 14,
+  name: "Chilcano de Pisco",
+  description: "Pisco, ginger ale, limón y hielo. Refrescante y clásico.",
+  price: 6.0,
+  image:  `${Cervezapilsen}`,
+  category: "bebida",
+  available: true,
+},
+{
+  id: 15,
+  name: "Frapuccino de Chocolate",
+  description: "Café con leche, chocolate y crema batida. Dulce y energético.",
+  price: 5.5,
+  image:  `${Cervezapilsen}`,
+  category: "bebida",
+  available: true,
+},
+{
+  id: 16,
+  name: "Agua de Jamaica",
+  description: "Infusión de flor de jamaica con limón, fría y revitalizante.",
+  price: 3.2,
+  image:  `${Cervezapilsen}`,
+  category: "bebida",
+  available: true,
+},
+{
+  id: 17,
+  name: "Cóctel sin alcohol: Sunset Kids",
+  description: "Jugo de piña y fresa con toque de limón. Ideal para niños.",
+  price: 3.8,
+  image:  `${Cervezapilsen}`,
+  category: "bebida",
+  available: true,
+},
+{
+  id: 18,
+  name: "Jugo Detox Verde",
+  description: "Espinaca, manzana, piña y limón. 100% natural y saludable.",
+  price: 4.2,
+  image:  `${Cervezapilsen}`,
+  category: "bebida",
+  available: true,
+},
+{
+  id: 19,
+  name: "Café Latte Caliente",
+  description: "Café espresso con leche cremosa. Perfecto para la tarde.",
+  price: 4.0,
+  image:  `${Cervezapilsen}`,
+  category: "bebida",
+  available: true,
+},
+{
+  id: 20,
+  name: "Sangría de la Casa",
+  description: "Vino tinto, frutas tropicales y un toque cítrico.",
+  price: 7.5,
+  image:  `${Cervezapilsen}`,
+  category: "bebida",
+  available: true,
+},
+
+{
+  id: 21,
+  name: "Alitas BBQ",
+  description: "ALitas BBQ + papa fritas.",
+  price: 7.5,
+  image: `${AlitasBbq}`,
+  category: "comida",
+  available: true,
+},
+
+
+
+
+
+];
