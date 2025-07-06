@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
-import Chica1 from "../../src/assets/images/mockups/chicaconplatos.png"
+
 
 
 const Login: React.FC = () => {
