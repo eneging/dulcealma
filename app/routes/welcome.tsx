@@ -101,7 +101,7 @@ export const Welcome: React.FC<WelcomeProps> = () => {
                 staggerChildren: 0.2, // Stagger entre botones
             },
         },
-    };
+    };git p
 
     return (
         <main className="bg-rose-50 text-gray-800 flex flex-col items-center overflow-hidden font-sans">
