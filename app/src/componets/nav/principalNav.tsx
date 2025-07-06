@@ -44,7 +44,7 @@ function PrincipalNav() {
               } hover:text-rose-400`}
             >
               {iconMap[link.icon]}
-              <span className="text-[10px]">{link.label}</span>
+              <span className="text-[11px]">{link.label}</span>
             </a>
           );
         })}
