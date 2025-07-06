@@ -6,7 +6,7 @@ import { motion } from 'framer-motion';
 import ReservaModal from '../src/componets/reservar/ReservaModal';
 
 // Asegúrate de que las rutas de tus imágenes son correctas
-import LocalPrincipal from "../../public/assets/images/mockups/local.png"; // Imagen de fondo principal
+// Imagen de fondo principal
  // Una imagen que quizás uses como icono o para una sección
 import ChicaPastelHero from "../../public/assets/imgdulcealma/chicatortachocolate.png"; // Imagen para el hero
 import ChicaPastelFilosofia from "../../public/assets/imgdulcealma/chicatortadegalleta.png"; // Imagen para la sección Filosofía
@@ -111,7 +111,7 @@ export const Welcome: React.FC<WelcomeProps> = () => {
                 className="relative w-full min-h-screen flex items-center justify-center py-20 lg:py-0
                  bg-cover bg-center bg-no-repeat 
                  after:content-[''] after:absolute after:inset-0 after:bg-gradient-to-t after:from-white/50 after:to-transparent lg:after:bg-white/20 after:backdrop-blur-sm"
-                style={{ backgroundImage: `url('${LocalPrincipal}')` }}
+                style={{ backgroundImage: `url('')` }}
             >
                 <div className="relative z-10 w-full max-w-7xl lg:grid lg:grid-cols-2 lg:gap-12 h-full flex flex-col justify-center items-center lg:items-start text-center lg:text-left px-6">
                     {/* Texto del Hero */}
